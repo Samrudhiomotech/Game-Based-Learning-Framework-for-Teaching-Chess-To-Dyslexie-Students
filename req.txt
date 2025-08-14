@@ -1,0 +1,49 @@
+chess                     1.11.2
+pip                       25.1.1 pyttsx3                   2.99
+pytz                      2025.2
+streamlit                 1.47.0
+asyncio                   4.0.0
+python                    3.11.0
+
+use stockfish api and the png images for pieces that are already stored in assets
+
+How to use
+
+# ==========================================
+# UI LAYER – User Interface & Navigation
+# ==========================================
+# Streamlit
+#   Purpose: Streamlit is the main web framework for creating the interactive chess app.
+#   Role: Handles rendering of the interface, images, forms, and user input.
+#   Why Needed: Allows your chess app to run in the browser with minimal setup,
+#   supports live updates when the player makes a move.
+streamlit
+
+# Streamlit Option Menu
+#   Purpose: Provides a simple way to create sidebar menus and tab navigation in Streamlit.
+#   Role: Used for switching between the Home page, Puzzle Game, and Full Chess Game modes.
+#   Why Needed: Makes your app multi-page without requiring complex routing logic.
+streamlit-option-menu
+
+
+# ==========================================
+# GAME LOGIC LAYER – Chess Rules & Mechanics
+# ==========================================
+# python-chess
+#   Purpose: Implements the complete rules of chess in Python.
+#   Role: Manages board representation, move validation, and game status (checkmate, draw).
+#   Why Needed: Without this library, you’d have to manually code all chess rules.
+#   Extras: Supports FEN (board position encoding) and PGN (game notation) formats.
+python-chess
+
+
+# ==========================================
+# AI ENGINE LAYER – Computer Opponent & Suggestions
+# ==========================================
+# stockfish
+#   Purpose: Python interface for the Stockfish chess engine (world-class AI).
+#   Role: Makes the computer play moves and gives move suggestions for the human side.
+#   Why Needed: Enables the "play against computer" mode and hint system in your app.
+#   Note: Requires Stockfish binary (stockfish.exe) installed separately on your system.
+stockfish
+
